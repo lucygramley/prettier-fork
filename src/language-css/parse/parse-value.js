@@ -1,4 +1,4 @@
-import PostcssValuesParser from "postcss-values-parser/lib/parser.js";
+import * as PostcssValuesParser from "postcss-values-parser";
 import getFunctionArgumentsText from "../utils/get-function-arguments-text.js";
 import getValueRoot from "../utils/get-value-root.js";
 import hasSCSSInterpolation from "../utils/has-scss-interpolation.js";

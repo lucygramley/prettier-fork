@@ -1,7 +1,7 @@
-import footnotes from "remark-footnotes";
+import Footnotes from "remark-footnotes";
 import remarkMath from "remark-math";
 import remarkParse from "remark-parse";
-import unified from "unified";
+import { unified } from "unified";
 import { locEnd, locStart } from "./loc.js";
 import { BLOCKS_REGEX, esSyntax } from "./mdx.js";
 import { hasIgnorePragma, hasPragma } from "./pragma.js";
@@ -31,7 +31,7 @@ function createParse({ isMDX }) {
         commonmark: true,
         ...(isMDX && { blocks: [BLOCKS_REGEX] }),
       })
-      .use(footnotes)
+      .use(Footnotes)
       .use(frontMatter)
       .use(remarkMath)
       .use(isMDX ? esSyntax : noop)

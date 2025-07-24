@@ -1,7 +1,7 @@
 /** @import {Plugin, Settings} from "unified" */
 
 /**
- * @type {Plugin<[], Settings>}
+ * @type {Plugin}
  */
 const wikiLink = function () {
   const entityType = "wikiLink";

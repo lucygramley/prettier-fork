@@ -1,4 +1,4 @@
-import collapseWhiteSpace from "collapse-white-space";
+import { collapseWhiteSpace } from "collapse-white-space";
 import isFrontMatter from "../utils/front-matter/is-front-matter.js";
 import { FORMAT_PRAGMAS } from "../utils/pragma/pragma.evaluate.js";
 import { startWithPragma } from "./pragma.js";
